@@ -1,29 +1,38 @@
-<h2>Sign up</h2>
+<main class='h-screen bg-mainColor flex justify-around items-center'>
+  <section class='w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700'>
+    <h2 class='text-xl font-medium text-gray-900 dark:text-white'>Sign up</h2>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+      <div class="field pt-2">
+        <%= f.label :email, class:'log-label' %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:'log-input', placeholder: 'name@campany.com', required: true %>
+      </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+      <div class="field pt-2">
+        <%= f.label :password, class:'log-label'%>
+        <%= f.password_field :password, autocomplete: "new-password", class:'log-input', placeholder:'••••••••', required: true %>
+        <% if @minimum_password_length %>
+        <em class='log-label'>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %>
+      </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+      <div class="field pt-2">
+        <%= f.label :password_confirmation, class:'log-label'%>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class:'log-input', placeholder:'••••••••', required: true%>
+      </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+      <div class="actions pt-2">
+        <div class='w-full bg-signIn rounded font-medium rounded-lg text-sm px-5 py-2.5 text-center hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300'>
+          <%= f.submit "Sign up" %>
+        </div>
+      </div>
+    <% end %>
+    <div class='flex justify justify-around items-center pt-2 text-sm'>
+      <%= render "devise/shared/links" %>
+    </div>
+  </section>
+  <section>
+    <%= image_tag('ruby.png', width: '300')%>
+  </section>
+</main>

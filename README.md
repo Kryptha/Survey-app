@@ -1,24 +1,14 @@
-# README
+# Welcome!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project has for objective to learn the use of hotwire, turbo-stream, StimulusJS and TailwindCSS with Ruby on Rails 7 and Docker. Its a Survey App with users may add new quests and chapters to send the survey through email to other other participants which are not necessarily registered in the App.
 
-Things you may want to cover:
+# Technologies
 
-* Ruby version
+- Docker 20.10
+- Ruby 3.0.4
+- Ruby on Rails 7
+- Hotwire, Stimulus JS and Turbo-Stream.
+- TailwindCSS
+- Sendgrid.
+- PostgreSQL.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

@@ -12,3 +12,5 @@ This project has for objective to learn the use of Hotwire, Turbo-Stream, Stimul
 - Sendgrid.
 - PostgreSQL.
 
+# State 
+In progress

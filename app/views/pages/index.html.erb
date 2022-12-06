@@ -1,6 +1,26 @@
-<div>
-  <h1 class="font-bold text-4xl">Pages#index</h1>
-  <p>Find me in app/views/pages/index.html.erb</p>
-</div>
-
-<i class="fa-solid fa-house-user"></i>
+<section class='h-screen flex justify-center items-center p-5'>
+  <div class='basis-1/2 text-center'>
+    <h2 class='text-3xl font-bold text-mainColor pb-4'>
+      Survey App
+    </h2>
+    <span class='text-sm text-mainColor'>
+      survey-app.com
+    </span>
+    <p class='pt-4 text-gray-600'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    </p>
+    <div class='flex w-full justify-around pt-5'>
+      <div class='bg-evaluationStrong rounded'>
+        <%= button_to 'Create evaluation', root_path, class: 'py-1 px-4 text-l text-white font-semibold' %>
+      </div>
+      <div class='bg-chapterStrong rounded'>
+        <%= button_to 'Create chapter', root_path, class: 'py-1 px-4 text-l text-white font-semibold' %>
+      </div>
+    </div>
+  </div>
+  <div class='basis-1/2 flex flex-col justify-center items-center'>
+    <span class='text-center text-lg font-semibold text-mainColor'>You are in!</span>
+    <%= image_tag('team.jpg', width: '500')%>
+  </div>
+</section>

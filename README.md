@@ -1,6 +1,6 @@
 # Welcome!
 
-This project has for objective to learn the use of hotwire, turbo-stream, StimulusJS and TailwindCSS with Ruby on Rails 7 and Docker. Its a Survey App with users may add new quests and chapters to send the survey through email to other other participants which are not necessarily registered in the App.
+This project has for objective to learn the use of Hotwire, Turbo-Stream, StimulusJS and TailwindCSS with Ruby on Rails 7 and Docker. Its a Survey App with users may add new quests and chapters to send the survey through email to other other participants which are not necessarily registered in the App.
 
 # Technologies
 
